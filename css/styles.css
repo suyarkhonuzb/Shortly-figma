@@ -1,7 +1,11 @@
 /* GLOBAL */
 :root{
-    --body-bg:#fff;
-    --text-color:#222;
+    --light-bg:#eff1f7;
+    --dark-bg:#232127;
+    --accent-color:#2bd0d0;
+    --accent-hover-color:#9ae3e3;
+    --heading-color:#34313d;
+    --text-color:#9e9aa8;
 }
 
 html{
@@ -16,21 +20,132 @@ body{
     flex-direction: column;
     margin: 0;
     padding: 0;
-    font-size: 16px;
-    line-height: 1.5;
-    font-family: 'Roboto', 'Arial',  sans-serif;
+    font-size: 15px;
+    line-height: 26px ;
+    font-family: 'Poppins', 'Arial',  sans-serif;
+    color:var(--text-color);
 }
 
 *, *::before, *::after{
     box-sizing: inherit;
 }
 
+a{
+    text-decoration: none;
+}
+
 /* CONTAINER */
 .container{
     width: 100%;
-    max-width: 1440px;
+    max-width: 1150px;
     padding-right: 20px;
     padding-left: 20px;
     margin-right: auto;
     margin-left: auto;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    padding-top: 48px;
+}
+
+.sitenav__logo {
+    margin-top: 0;
+    margin-right: 44px;
+}
+
+.logo__link:hover {
+    opacity: 0.8;
+}
+
+.logo__link:active{
+    opacity: 0.6;
+}
+
+.logo {
+    width: 120px;
+    height: 32px;
+}
+
+.logo__img{
+}
+
+.sitenav {
+    margin: 0;
+    padding: 0;
+}
+
+.sitenav--vertical {
+}
+
+.sitenav__list {
+    display: flex;
+    align-items: center;
+    margin-right: 493px;
+    list-style: none;
+}
+
+.sitenav__item:not(:last-child){
+    margin-right: 29px;
+}
+
+.sitenav__link {
+    display: block;
+    font-size: 15px;
+    line-height: normal;
+    font-weight: 700;
+    color:var(--text-color);
+    transition: color 0.4s ease;
+}
+
+.sitenav__link:hover{
+    color: var(--heading-color);
+}
+
+.sitenav__link:active{
+    opacity: 0.6;
+}
+
+.button--groups {
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    background-color: transparent;
+    border: 0;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.button:hover{
+    opacity: 0.8;
+}
+
+.button:Active{
+    opacity: 0.6;
+}
+
+.button--login {
+    color: var(--text-color);
+    margin-right: 37px;
+}
+
+.button--signup {
+    padding: 9px 23px 8px 24px;
+    white-space: nowrap;
+}
+
+.button__active{
+    background-color:var(--accent-color);
+    border-radius: 28px;
+    color: #fff;
+    transition: background-color 0.4s ease;
+}
+
+.button__active:hover{
+    background-color: var(--accent-hover-color);
 }
