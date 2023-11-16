@@ -28,10 +28,59 @@
         </nav>
             <!-- Registered -->
         <div class="button--groups">
-            <button class="button button--login">Login</button>
-            <button class="button button--signup
+            <button type="button" class="button button--login">Login</button>
+            <button type="button" class="button button--signup
             button__active">Sign Up</button>
         </div>
     </header>
+
+    <!-- MAIN  -->
+    <main class="main-content">
+        <section class="hero__section">
+            <div class="hero__container container">
+                <div class="hero__content">
+                    <h1 class="hero__header">More than just shorter links</h1>
+                    <p class="hero__text">Build your brand’s recognition and get detailed insights on how your links are performing.</p>
+                    <button type="button" class="button button__active big__button">Get Started</button>
+                </div>
+                <img class="hero__img" src="img/working_with_computer.png" alt="Working with computer" width="658" height="482" srcset="img/working_with_computer.png 1x, img/working_with_computer@2x.png 2x">
+            </div>
+        </section>
+
+        <div class="index-url-shortener-features-wrapper">
+            <div class="index-url-shortener-wrapper__url-shortener">
+                <section class="url-shortener">
+                    <div class="container">
+                        <h2 class="visually-hidden">URL shortener</h2>
+                        <form class="url-shortener__form" action="https://echo.htmlacademy.ru" method="post">
+                            <div class="url-shortener__input-wrapper">
+                                <input class="url-shortener__input" type="url" placeholder="Shorten a link here..." aria-label="URL shortener" required>
+                                <div class="url-shortener__error-msg">Please add a link</div>
+                            </div>
+                            <button class="button url-shortener__submit button--rectangle-big" type="submit">Shorten It!</button>
+                        </form>
+                        <!-- URL FORM RESULTS -->
+                        <div class="url-shortener__results">
+                            <div class="url-shortener__result">
+                                <div class="url-shortener__original-link">https://www.frontendmentor.io</div>
+                                <a class="url-shortener__short-link" href="#">https://rel.ink/k4lKyk</a>
+                                <button type="button" class="button big-button button-rectangle-big button-copy">Copy</button>
+                            </div>
+                            <div class="url-shortener__result">
+                                <div class="url-shortener__original-link">https://twitter.com/frontendmentor</div>
+                                <a class="url-shortener__short-link" href="#">https://rel.ink/gxOXp9</a>
+                                <button type="button" class="button big-button button-rectangle-big button-copy">Copy</button>
+                            </div>
+                            <div class="url-shortener__result">
+                                <div class="url-shortener__original-link">https://www.linkedin.com/company/frontend-mentor</div>
+                                <a class="url-shortener__short-link" href="#">https://rel.ink/gob3X9</a>
+                                <button type="button" class="button big-button button-rectangle-big button-copy">Copy</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
