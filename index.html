@@ -54,7 +54,7 @@
                         <h2 class="visually-hidden">URL shortener</h2>
                         <form class="url-shortener__form" action="https://echo.htmlacademy.ru" method="post">
                             <div class="url-shortener__input-wrapper">
-                                <input class="url-shortener__input" type="url" placeholder="Shorten a link here..." aria-label="URL shortener" required>
+                                <input class="url-shortener__input" type="url" name="url" placeholder="Shorten a link here..." aria-label="URL shortener" required>
                                 <div class="url-shortener__error-msg">Please add a link</div>
                             </div>
                             <button class="button url-shortener__submit button--rectangle-big" type="submit">Shorten It!</button>
@@ -64,23 +64,61 @@
                             <div class="url-shortener__result">
                                 <div class="url-shortener__original-link">https://www.frontendmentor.io</div>
                                 <a class="url-shortener__short-link" href="#">https://rel.ink/k4lKyk</a>
-                                <button type="button" class="button big-button button-rectangle-big button-copy">Copy</button>
+                                <button type="button" class="button big-button button-rectangle-big button-copy js-button--copy">Copy</button>
                             </div>
                             <div class="url-shortener__result">
                                 <div class="url-shortener__original-link">https://twitter.com/frontendmentor</div>
                                 <a class="url-shortener__short-link" href="#">https://rel.ink/gxOXp9</a>
-                                <button type="button" class="button big-button button-rectangle-big button-copy">Copy</button>
+                                <button type="button" class="button big-button button-rectangle-big button-copy js-button--copy">Copy</button>
                             </div>
                             <div class="url-shortener__result">
                                 <div class="url-shortener__original-link">https://www.linkedin.com/company/frontend-mentor</div>
                                 <a class="url-shortener__short-link" href="#">https://rel.ink/gob3X9</a>
-                                <button type="button" class="button big-button button-rectangle-big button-copy">Copy</button>
+                                <button type="button" class="button big-button button-rectangle-big button-copy js-button--copy">Copy</button>
                             </div>
                         </div>
                     </div>
                 </section>
             </div>
+
+
+            <!-- INDEX FEATURES -->
+            <section class="index-features">
+                <div class="container">
+                    <div class="index-features__top">
+                        <h2 class="index-features__title">Advanced Statistics</h2>
+                        <p class="index-features__top-info">Track how your links are performing across the web with our advanced statistics dashboard.</p>
+                    </div>
+
+                    <ul class="index-features__list">
+                        <li class="index-features__item index-feature">
+                            <div class="index-feature__icon-wrapper">
+                                <img class="index-feature__icon" src="img/Combined Shape.png" alt="Brand Recognition" srcset="">
+                            </div>
+                            <h2 class="index-feature__title">Brand Recognition</h2>
+                            <p class="index-feature__info">Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content.</p>
+                        </li>
+                        <li class="index-features__item index-feature">
+                            <div class="index-feature__icon-wrapper">
+                                <img class="index-feature__icon" src="img/Combined Shape-1.png" alt="" srcset="">
+                            </div>
+                            <h2 class="index-feature__title">Detailed Records</h2>
+                            <p class="index-feature__info">Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.</p>
+                        </li>
+                        <li class="index-features__item index-feature">
+                            <div class="index-feature__icon-wrapper">
+                                <img class="index-feature__icon" src="img/Shape.png" alt="" srcset="">
+                            </div>
+                            <h2 class="index-feature__title">Fully Customizablen</h2>
+                            <p class="index-feature__info">Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
         </div>
     </main>
+
+
+    <script src="js/main.js"></script>
 </body>
 </html>
