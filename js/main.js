@@ -10,7 +10,7 @@ if(elUrlShortenerForm){
     })
 }
 if(elUrlShortener){
-    elUrlShortener.addEventListener('click', function (evt){
+    elUrlShortener.addEventListener('click', 'debugger', function (evt){
         if(evt.target.matches('.js-button--copy')){
             evt.target.textContent = 'Copied!'
         }
